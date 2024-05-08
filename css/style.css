@@ -1,0 +1,115 @@
+/* Navbar */
+nav {
+    background-color: #128C7E;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+/* Chat container */
+.container {
+    max-width: 80%;
+    margin: auto;
+    height: 60vh;
+    padding: 20px;
+    border-radius: 20px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.message {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.left {
+    float: left;
+    clear: both;
+    margin-right: 20px;
+}
+
+.right {
+    float: right;
+    clear: both;
+    margin-left: 20px;
+}
+
+/* Chat input area */
+.chat-input {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#messageInp {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    outline: none; /* Remove outline */
+}
+
+.emoji-picker-container {
+    margin-right: 10px;
+}
+
+#emojiButton {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #128C7E;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+#emojiButton:hover {
+    background-color: #0D6E5C;
+}
+
+.btn {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #128C7E;
+    color: #fff;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0D6E5C;
+}
