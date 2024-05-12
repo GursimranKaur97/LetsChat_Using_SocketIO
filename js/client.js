@@ -12,6 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
         position: 'top-end', // Adjust position as needed
         autoHide: false // Prevent auto-hiding
     });
+
+    emojiButton.addEventListener('click', () => {
+        picker.togglePicker(emojiButton);
+    });
+    
     
     // Audio that will play on receiving messages
     var audio = new Audio('ting.mp3');
@@ -58,11 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
-    // Insert selected emoji into the message input field
-    picker.on('emoji', selection => {
-        // Insert the emoji at the current cursor position
-        const cursorPos = messageInput.selectionStart;
-        messageInput.setRangeText(selection.emoji, cursorPos, cursorPos, 'end');
-        messageInput.dispatchEvent(new Event('input')); // Trigger input event to update value
-    });
+    picker.on('emoji', emoji => {
+    messageInput.value += emoji;
+   });
 });

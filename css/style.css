@@ -28,28 +28,21 @@ h1 {
     padding: 20px;
     border-radius: 20px;
     overflow-y: auto;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #f9f9f9;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .message {
-    background-color: #f1f1f1;
+    background-color: #DCF8C6; /* Light green for sent messages */
     padding: 10px;
     margin: 10px 0;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    max-width: 70%; /* Limit width to provide a chat-like appearance */
 }
 
-.left {
-    float: left;
-    clear: both;
-    margin-right: 20px;
-}
-
-.right {
-    float: right;
-    clear: both;
-    margin-left: 20px;
+.message.left {
+    background-color: #FFFFFF; /* White background for received messages */
 }
 
 /* Chat input area */
@@ -67,7 +60,7 @@ h1 {
 .input-container {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 90px); /* Adjust for emoji button width and send button width */
 }
 
 #messageInp {
@@ -80,15 +73,11 @@ h1 {
     outline: none; /* Remove outline */
 }
 
-.emoji-picker-container {
-    margin-right: 10px;
-}
-
 #emojiButton {
     font-size: 20px;
     cursor: pointer;
-    background-color: #128C7E;
-    color: white;
+    background-color: #f9f9f9;
+    color: #128C7E;
     border: none;
     border-radius: 50%;
     padding: 8px;
@@ -96,7 +85,7 @@ h1 {
 }
 
 #emojiButton:hover {
-    background-color: #0D6E5C;
+    background-color: #E0E0E0; /* Lighter background color on hover */
 }
 
 .btn {
@@ -108,8 +97,14 @@ h1 {
     color: #fff;
     font-size: 18px;
     transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
 }
 
 .btn:hover {
     background-color: #0D6E5C;
+}
+
+.btn img {
+    margin-right: 5px; /* Add a margin between icon and text */
 }
