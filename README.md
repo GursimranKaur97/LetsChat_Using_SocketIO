@@ -21,8 +21,8 @@ To run the project locally, follow these steps:
 1. Clone the repository
 2. Navigate to the project directory
 3. Install dependencies
-4. Start the server:
-5. Open your browser and go to `http://localhost:8000` to view the application.
+4. Start the server
+5. Open your index.html file in browser
 
 ## Usage
 
